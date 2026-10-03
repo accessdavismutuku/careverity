@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 0 720 220" role="img" aria-labelledby="title desc">
+  <title id="title">CareVerity Training Academy logo</title>
+  <desc id="desc">Professional blue, teal and navy logo for CareVerity Training Academy with shield, open book and checkmark learning symbol.</desc>
+  <defs>
+    <linearGradient id="academyMark" x1="28" y1="28" x2="174" y2="178" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1FB6B0"/>
+      <stop offset="0.52" stop-color="#128F8B"/>
+      <stop offset="1" stop-color="#0B1F3A"/>
+    </linearGradient>
+    <linearGradient id="academyRibbon" x1="83" y1="123" x2="147" y2="184" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3FE0C5"/>
+      <stop offset="1" stop-color="#0E7F7C"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0B1F3A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="720" height="220" rx="22" fill="#FFFFFF"/>
+  <g filter="url(#softShadow)">
+    <path d="M105 24c33 20 62 25 89 25v58c0 45-25 76-89 98-64-22-89-53-89-98V49c27 0 56-5 89-25Z" fill="url(#academyMark)"/>
+    <path d="M105 39c27 16 50 20 73 21v47c0 36-20 61-73 80-53-19-73-44-73-80V60c23-1 46-5 73-21Z" fill="#FFFFFF" fill-opacity="0.96"/>
+    <path d="M105 52c22 13 42 17 61 18v37c0 29-16 50-61 67-45-17-61-38-61-67V70c19-1 39-5 61-18Z" fill="#E8FAF7"/>
+  </g>
+
+  <g transform="translate(50 62)">
+    <path d="M16 27c20-10 36-10 55 0v61c-19-10-35-10-55 0V27Z" fill="#FFFFFF" stroke="#0B1F3A" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M71 27c20-10 36-10 55 0v61c-19-10-35-10-55 0V27Z" fill="#FFFFFF" stroke="#0B1F3A" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M71 27v61" stroke="#128F8B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M31 45h25M31 60h24M88 45h24M88 60h24" stroke="#6B8298" stroke-width="4" stroke-linecap="round"/>
+    <path d="M39 78l17 17 50-50" fill="none" stroke="url(#academyRibbon)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <path d="M208 40h1.5v140H208z" fill="#D8E3EB"/>
+  <path d="M226 56h350" stroke="#D8E3EB" stroke-width="2" stroke-linecap="round"/>
+  <path d="M226 165h232" stroke="#D8E3EB" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="226" y="103" fill="#0B1F3A" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="0.5">CareVerity</text>
+  <text x="229" y="145" fill="#128F8B" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" letter-spacing="3">TRAINING ACADEMY</text>
+  <text x="230" y="182" fill="#50667A" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="1.4">ECM &amp; CARE COMPLIANCE LEARNING</text>
+
+  <g transform="translate(598 64)">
+    <circle cx="42" cy="42" r="40" fill="#F1FBF8" stroke="#128F8B" stroke-width="4"/>
+    <path d="M24 42l12 12 25-27" fill="none" stroke="#0B1F3A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M42 4a38 38 0 0 1 37 30" fill="none" stroke="#1FB6B0" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

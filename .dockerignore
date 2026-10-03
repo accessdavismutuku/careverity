@@ -1,0 +1,17 @@
+node_modules
+.next
+.git
+.codex
+.codex-*
+out
+dist
+playwright-report
+test-results
+coverage
+*.log
+.env
+.env.*
+!.env.staging.example
+npm-debug.log*
+.npm-cache
+.supabase-cli-home

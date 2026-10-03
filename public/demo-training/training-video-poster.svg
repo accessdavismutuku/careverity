@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="CareVerity Training Academy video poster">
+  <rect width="1280" height="720" fill="#0B1F3A"/>
+  <rect x="64" y="64" width="1152" height="592" rx="16" fill="#102B4D" stroke="#2DD4BF" stroke-width="4"/>
+  <circle cx="640" cy="360" r="82" fill="#14B8A6"/>
+  <path d="M616 315 L616 405 L692 360 Z" fill="#FFFFFF"/>
+  <text x="640" y="520" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">CareVerity Training Academy</text>
+  <text x="640" y="568" fill="#BDEFE7" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">Training video placeholder</text>
+</svg>

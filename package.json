@@ -1,0 +1,47 @@
+{
+  "name": "lqcs-training-academy",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "prebuild": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:report": "playwright show-report",
+    "test:careverity": "playwright test tests/careverity-end-to-end.spec.ts",
+    "test:careverity:headed": "playwright test tests/careverity-end-to-end.spec.ts --headed",
+    "test:careverity:report": "playwright show-report",
+    "test:launch-readiness": "playwright test tests/careverity-launch-readiness.spec.ts",
+    "test:launch-readiness:headed": "playwright test tests/careverity-launch-readiness.spec.ts --headed",
+    "test:security-readiness": "playwright test tests/careverity-security-readiness.spec.ts",
+    "staging:check": "node scripts/careverity-staging-readiness.mjs",
+    "staging:uat": "playwright test tests/careverity-full-uat.spec.ts tests/careverity-security-readiness.spec.ts tests/careverity-launch-readiness.spec.ts",
+    "test:load:100-companies": "k6 run tests/load/careverity-100-companies-load-test.js",
+    "test:load:saas:100": "k6 run tests/load/careverity-saas-scale-load-test.js",
+    "test:load:saas:250": "k6 run --env CAREVERITY_COMPANY_COUNT=250 tests/load/careverity-saas-scale-load-test.js",
+    "test:load:saas:500": "k6 run --env CAREVERITY_COMPANY_COUNT=500 tests/load/careverity-saas-scale-load-test.js"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.107.0",
+    "next": "^16.2.7",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^20.17.6",
+    "@types/react": "^19.2.16",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.2.7",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.9.3"
+  }
+}

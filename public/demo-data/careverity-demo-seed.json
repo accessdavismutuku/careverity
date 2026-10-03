@@ -1,0 +1,432 @@
+{
+  "meta": {
+    "product": "CareVerity ECM",
+    "exportType": "seed",
+    "version": "prototype-demo-seed-v1",
+    "createdAt": "2026-05-22T14:30:00.000Z",
+    "createdBy": "Demo Registered Manager",
+    "dataSafety": "Fake demo/prototype data only. Do not export real personal data unless the system is secured, encrypted and authorised."
+  },
+  "warning": "Do not export or import real personal data unless the system is properly secured, encrypted and authorised.",
+  "localStorage": {
+    "careverity-demo-workflow-status": "{\"staffCreated\":true,\"clientCreated\":true,\"callsCreated\":true,\"allocationCreated\":true,\"rotaPublished\":true,\"liveVisible\":true}",
+    "careverity-demo-backup-audit": "[{\"action\":\"Demo seed file created\",\"detail\":\"Saved fake CareVerity prototype seed data inside the workspace for cross-computer continuation.\",\"dateTime\":\"2026-05-22T14:30:00.000Z\",\"user\":\"Demo Registered Manager\"}]",
+    "careverity-demo-journal-entries": "[{\"id\":\"JRN-DEMO-0001\",\"clientId\":\"demo-su-101\",\"type\":\"Telephone call from service user\",\"subject\":\"Lunch call time change request\",\"locked\":true,\"actionRequired\":true,\"mainActionOwner\":\"Care Coordinator B\",\"taggedStaff\":[\"Registered Manager\",\"Quality Officer\",\"Deputy Manager\"],\"status\":\"Open\"}]",
+    "careverity-demo-tagged-staff-tasks": "[{\"id\":\"TASK-JRN-0001\",\"linkedJournalEntry\":\"JRN-DEMO-0001\",\"assignedTo\":\"Care Coordinator B\",\"priority\":\"High\",\"status\":\"New\",\"dueDate\":\"2026-05-23\"}]",
+    "careverity-demo-compliance-registers": "{\"article32Status\":\"In progress\",\"backupTests\":1,\"supplierReviews\":1,\"trainingEvidence\":2,\"riskRegisterItems\":2}"
+  },
+  "staffFiles": [
+    {
+      "name": "Demo Admin Coordinator A",
+      "ref": "CV-DEMO-ADMIN-001",
+      "role": "Care Coordinator",
+      "dbs": "Current",
+      "training": "Compliant",
+      "ni": "Restricted demo placeholder",
+      "photo": "DA",
+      "status": "Active",
+      "email": "demo.coordinator.a@example.com",
+      "mobile": "07000000010",
+      "jobTitle": "Care Coordinator",
+      "address": "Demo Office Address, Hayes, UB4 0SD",
+      "startDate": "2026-05-16",
+      "availability": "Monday to Friday, 09:00 to 17:00. Office access only unless remote access is authorised.",
+      "rightToWork": "Current"
+    },
+    {
+      "name": "Demo Care Worker A",
+      "ref": "CV-DEMO-CW-001",
+      "role": "Care Worker / Mobile User",
+      "dbs": "Current",
+      "training": "Compliant",
+      "ni": "Restricted demo placeholder",
+      "photo": "DA",
+      "status": "Active",
+      "email": "demo.carer.a@example.com",
+      "mobile": "07000000001",
+      "jobTitle": "Care Worker",
+      "address": "Demo Worker Address, Hayes, UB4 0SD",
+      "startDate": "2026-05-16",
+      "availability": "Monday to Sunday, 08:00 to 22:00. Medication, moving and handling and dementia training compliant.",
+      "rightToWork": "Current"
+    },
+    {
+      "name": "Demo Care Worker B",
+      "ref": "CV-DEMO-CW-002",
+      "role": "Care Worker / Mobile User",
+      "dbs": "Current",
+      "training": "Compliant",
+      "ni": "Restricted demo placeholder",
+      "photo": "DB",
+      "status": "Active",
+      "email": "demo.carer.b@example.com",
+      "mobile": "07000000002",
+      "jobTitle": "Care Worker",
+      "address": "Demo Worker Address, Southall, UB1 1AA",
+      "startDate": "2026-05-16",
+      "availability": "Monday to Sunday, 08:00 to 20:00",
+      "rightToWork": "Current"
+    },
+    {
+      "name": "Demo Float Worker C",
+      "ref": "CV-DEMO-FLOAT-003",
+      "role": "Float Pool Care Worker",
+      "dbs": "Current",
+      "training": "Compliant",
+      "ni": "Restricted demo placeholder",
+      "photo": "DF",
+      "status": "Active",
+      "email": "demo.float.c@example.com",
+      "mobile": "07000000003",
+      "jobTitle": "Float Pool Care Worker",
+      "address": "Demo Worker Address, Uxbridge, UB8 1AA",
+      "startDate": "2026-05-16",
+      "availability": "Weekdays and alternate weekends, 07:00 to 21:00",
+      "rightToWork": "Current"
+    }
+  ],
+  "serviceUserFiles": [
+    {
+      "id": "demo-su-101",
+      "name": "Demo Service User 101",
+      "package": "Personal care double-up",
+      "funding": "Local Authority",
+      "preferredName": "Demo User",
+      "address": "Demo House, 1 Care Street, Hayes",
+      "postcode": "UB4 0SD",
+      "riskLevel": "High",
+      "regularTeam": {
+        "primary": "Demo Care Worker A",
+        "additional": "Demo Care Worker B",
+        "outreach": "Demo Float Worker C",
+        "additionalOutreach": "Not assigned",
+        "preferred": ["Demo Care Worker A"],
+        "excluded": ["No exclusions recorded"],
+        "skills": ["Medication support", "Moving and handling", "Dementia awareness", "Safeguarding adults"],
+        "preference": "Continuity preferred for morning, lunch and tea calls.",
+        "usualTimes": ["08:00", "12:30", "17:00", "21:00"],
+        "duration": "30 to 45 minutes",
+        "doubleUp": "Required for bed call and moving and handling tasks.",
+        "continuity": "High"
+      }
+    }
+  ],
+  "callPackages": {
+    "savedCallPackages": {
+      "demo-su-101": [
+        {
+          "callType": "Morning Call",
+          "start": "08:00",
+          "end": "08:45",
+          "duration": "45m",
+          "carerMode": "Single carer",
+          "requiredSkills": "Medication support, dementia awareness",
+          "riskLevel": "High",
+          "status": "Permanent",
+          "permanentCarer": "Demo Care Worker A",
+          "funding": "Local Authority"
+        },
+        {
+          "callType": "Lunch Call",
+          "start": "12:30",
+          "end": "13:00",
+          "duration": "30m",
+          "carerMode": "Single carer",
+          "requiredSkills": "Meal support, nutrition",
+          "riskLevel": "High",
+          "status": "Permanent",
+          "permanentCarer": "Demo Care Worker A",
+          "funding": "Local Authority"
+        },
+        {
+          "callType": "Tea Call",
+          "start": "17:00",
+          "end": "17:30",
+          "duration": "30m",
+          "carerMode": "Single carer",
+          "requiredSkills": "Meal support",
+          "riskLevel": "High",
+          "status": "Permanent",
+          "permanentCarer": "Demo Care Worker A",
+          "funding": "Local Authority"
+        },
+        {
+          "callType": "Bed Call",
+          "start": "21:00",
+          "end": "21:45",
+          "duration": "45m",
+          "carerMode": "Double-up",
+          "requiredSkills": "Moving and handling",
+          "riskLevel": "High",
+          "status": "Temporary",
+          "permanentCarer": "Demo Care Worker B",
+          "funding": "Local Authority"
+        },
+        {
+          "callType": "Welfare Check",
+          "start": "10:30",
+          "end": "11:00",
+          "duration": "30m",
+          "carerMode": "Single carer",
+          "requiredSkills": "Welfare monitoring",
+          "riskLevel": "High",
+          "status": "Allocated",
+          "permanentCarer": "Demo Float Worker C",
+          "funding": "Local Authority"
+        },
+        {
+          "callType": "Emergency Visit",
+          "start": "As needed",
+          "end": "As needed",
+          "duration": "30m",
+          "carerMode": "Single carer",
+          "requiredSkills": "Emergency response",
+          "riskLevel": "Critical",
+          "status": "Unallocated",
+          "permanentCarer": "Manager allocation",
+          "funding": "Local Authority"
+        }
+      ]
+    }
+  },
+  "rotaAllocations": {
+    "savedAllocations": [
+      {
+        "id": "alloc-demo-2w-001",
+        "clientId": "demo-su-101",
+        "clientName": "Demo Service User 101",
+        "callTypes": ["Morning Call", "Lunch Call", "Tea Call"],
+        "carer": "Demo Care Worker A",
+        "dateRange": "Two weeks",
+        "allocationType": "Permanent regular carer",
+        "visitsCreated": 42,
+        "published": true
+      },
+      {
+        "id": "alloc-demo-1m-002",
+        "clientId": "demo-su-101",
+        "clientName": "Demo Service User 101",
+        "callTypes": ["Bed Call"],
+        "carer": "Demo Care Worker B",
+        "dateRange": "One month",
+        "allocationType": "Temporary cover",
+        "visitsCreated": 31,
+        "published": true
+      }
+    ],
+    "plannerShifts": [],
+    "permanentAllocations": []
+  },
+  "oneOffCalls": [
+    {
+      "id": "one-off-demo-001",
+      "clientId": "demo-su-101",
+      "callType": "Appointment Support",
+      "date": "2026-05-22",
+      "time": "09:30 to 11:30",
+      "assignedTo": "Demo Float Worker C",
+      "status": "Draft"
+    }
+  ],
+  "emergencyCalls": [
+    {
+      "id": "emergency-demo-001",
+      "clientId": "demo-su-101",
+      "callType": "Emergency Visit",
+      "trigger": "Welfare concern demo scenario",
+      "assignedTo": "On-call Coordinator",
+      "status": "Awaiting manager approval"
+    }
+  ],
+  "clientJournalEntries": [
+    {
+      "id": "JRN-DEMO-0001",
+      "clientId": "demo-su-101",
+      "journalType": "Telephone call from service user",
+      "subject": "Lunch call time change request",
+      "note": "Service user called and requested lunch call to be changed from 11:00 to 12:30 due to appointment. Care coordinator advised that rota impact will be checked and confirmation will be provided.",
+      "locked": true,
+      "createdBy": "Demo Care Coordinator",
+      "createdAt": "2026-05-16T10:15:00.000Z",
+      "mainActionOwner": "Care Coordinator B",
+      "taggedStaff": ["Registered Manager", "Quality Officer", "Deputy Manager"],
+      "witnessStaff": ["General Administrator", "Field Supervisor"],
+      "actionRequired": true,
+      "priority": "Normal",
+      "status": "Open"
+    }
+  ],
+  "taggedStaffTasks": [
+    {
+      "id": "TASK-JRN-0001",
+      "linkedClient": "Demo Service User 101",
+      "linkedJournalEntry": "JRN-DEMO-0001",
+      "taskTitle": "Review lunch call time change request",
+      "assignedTo": "Care Coordinator B",
+      "priority": "High",
+      "status": "New",
+      "dueDate": "2026-05-23",
+      "createdBy": "Demo Care Coordinator"
+    }
+  ],
+  "trainingAcademyData": {
+    "courses": [
+      "Medication Awareness / Advanced",
+      "Safeguarding Adults Awareness",
+      "Moving & Handling Awareness",
+      "Dementia Care Awareness",
+      "Data Protection / Confidentiality / Cyber Security"
+    ],
+    "staffTrainingRecords": [
+      {
+        "staffName": "Demo Care Worker A",
+        "trainingCompleted": "Data Protection / Confidentiality / Cyber Security",
+        "dateCompleted": "2026-05-12",
+        "scoreOutcome": "Passed",
+        "certificateUploaded": true,
+        "refresherDue": "2027-05-12",
+        "managerSignOff": "Demo Registered Manager"
+      }
+    ]
+  },
+  "certificates": {
+    "records": [
+      {
+        "certificateNumber": "LQCSCA161B-DEMO",
+        "staffName": "Demo Care Worker A",
+        "courseTitle": "Epilepsy Awareness L3 & Buccal Training",
+        "issueDate": "2026-05-12",
+        "expiryDate": "2027-05-12",
+        "trainerName": "H. AHMED",
+        "templateUsed": "LQCS Classic Certificate",
+        "status": "Issued",
+        "verificationCode": "CV-DEMO-VERIFY-001"
+      }
+    ]
+  },
+  "rolesAndPermissions": {
+    "roles": [
+      "System Owner",
+      "Registered Manager",
+      "Care Coordinator",
+      "HR Administrator",
+      "Finance Administrator",
+      "Care Worker / Mobile User",
+      "Auditor / Inspector Read-Only"
+    ],
+    "permissionProfiles": {
+      "Care Coordinator": ["Service User / Client Files", "Rota / Shift Allocation", "Live ECM Board", "Client Journal"],
+      "HR Administrator": ["HR / Staff Files", "Recruitment", "Training Matrix"],
+      "Finance Administrator": ["Finance / Payroll", "NHS Invoices"],
+      "Care Worker / Mobile User": ["Own visits", "Permitted care documents", "Mobile task checklist"]
+    }
+  },
+  "availabilityAccessSchedules": [
+    {
+      "staffName": "Demo Care Worker A",
+      "schedule": "Monday, Wednesday, Friday, 07:00 to 14:00. Alternate weekends 08:00 to 20:00.",
+      "controls": "Controls rota allocation suitability."
+    },
+    {
+      "staffName": "Demo Admin Coordinator A",
+      "schedule": "Monday to Friday, 09:00 to 17:00.",
+      "controls": "Office access only unless remote access is authorised."
+    }
+  ],
+  "complianceRegisters": {
+    "article32": {
+      "status": "In progress",
+      "encryptionControls": "Placeholder controls visible in prototype.",
+      "restrictedFields": ["NHS number", "key safe code", "DBS certificate number", "National Insurance number", "bank details"],
+      "evidenceItems": ["Access control policy", "Backup test record", "Supplier due diligence", "Staff training evidence"]
+    },
+    "backupRestore": [
+      {
+        "backupType": "Prototype demo backup",
+        "systemDataCovered": "Staff, clients, rota, journal, training, roles, settings",
+        "restoreTestResult": "Demo seed load available",
+        "nextTestDate": "2026-06-22",
+        "signedOffBy": "Demo Registered Manager"
+      }
+    ],
+    "supplierDueDiligence": [
+      {
+        "supplierName": "Demo Hosting Provider",
+        "serviceProvided": "Secure hosting placeholder",
+        "dataProcessed": "Prototype demo data only",
+        "specialCategoryData": false,
+        "contractDpaInPlace": "Prototype placeholder",
+        "reviewDate": "2026-06-22",
+        "approvalStatus": "Demo review pending"
+      }
+    ],
+    "riskRegister": [
+      {
+        "riskTitle": "Unauthorised access",
+        "likelihood": "Medium",
+        "impact": "High",
+        "controls": "Role permissions, restricted fields, audit logs, working hours access",
+        "status": "In progress"
+      },
+      {
+        "riskTitle": "Backup failure",
+        "likelihood": "Low",
+        "impact": "High",
+        "controls": "Backup and restore test register",
+        "status": "Review scheduled"
+      }
+    ],
+    "breachIncidentLog": [
+      {
+        "incidentReference": "DP-DEMO-001",
+        "incidentType": "Demo wrong recipient email drill",
+        "riskAssessment": "Low in demo mode",
+        "icoReportRequired": false,
+        "lessonsLearned": "Use secure transfer log and recipient checks before external sharing."
+      }
+    ]
+  },
+  "auditLogs": [
+    {
+      "dateTime": "2026-05-22T14:30:00.000Z",
+      "user": "Demo Registered Manager",
+      "role": "Registered Manager",
+      "action": "Demo seed data saved",
+      "affectedRecord": "CareVerity workspace seed",
+      "reasonComment": "Cross-computer continuation",
+      "ipDevicePlaceholder": "Demo local workstation",
+      "auditReference": "AUD-DEMO-SEED-001"
+    }
+  ],
+  "settings": {
+    "callTypes": [
+      "Morning Call",
+      "Lunch Call",
+      "Tea Call",
+      "Bed Call",
+      "Night Call",
+      "Personal Care",
+      "Medication Prompt",
+      "Medication Administration",
+      "Welfare Check",
+      "Outreach",
+      "Community Access",
+      "Shopping",
+      "Sitting Service",
+      "Cleaning",
+      "Domestic Support",
+      "Appointment Support",
+      "Respite Support",
+      "Hospital Discharge Support",
+      "Double-up Visit",
+      "Emergency Visit",
+      "End of Life Support",
+      "Reablement Visit",
+      "Social Support",
+      "Other Custom Call"
+    ],
+    "demoMode": true,
+    "auditLogEnabled": true,
+    "restrictedDataWarning": "Use fake demo data only until secure database, hosting, backups, access controls and audit logs are production-ready."
+  }
+}
